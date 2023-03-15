@@ -1,0 +1,5 @@
+import{d as i,e as s,r as v,c as p,u as n,o as m}from"./vendor.e409d497.js";const _=i({setup(C){let u=s([{title:"\u8D2D\u7269",start:"2023-03-11 08:00",end:"2023-03-11 12:00",editable:!0},{title:"\u6572\u4EE3\u7801",start:"2023-03-14 10:00",end:"2023-03-14 16:00"}]),a=e=>{u.value.push({start:e.dateStr+" 12:00",end:e.dateStr+" 18:00",title:"\u5B66\u4E60",editable:!0})},r=e=>{console.log(e)},o=e=>{let l=document.createElement("div"),t=e.timeText.split("-"),d=t[0].replace("\u4E0A\u5348","").replace("\u65F6",":00"),c=t[1].replace("\u4E0B\u5348","").replace("\u65F6",":00");return l.innerHTML=`
+          <div>\u5F00\u59CB\u65F6\u95F4: ${d}</div>
+          <div>\u7ED3\u675F\u65F6\u95F4: ${c}</div>
+          <div>\u6807\u9898: ${e.event._def.title}</div>
+        `,{domNodes:[l]}};return(e,l)=>{const t=v("my-calendar");return m(),p(t,{events:n(u),onDateClick:n(a),onEventClick:n(r),displayEventEnd:"",eventContent:n(o)},null,8,["events","onDateClick","onEventClick","eventContent"])}}});export{_ as default};

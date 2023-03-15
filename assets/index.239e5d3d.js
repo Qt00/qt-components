@@ -1,0 +1,1 @@
+import{_ as e}from"./index.f647a813.js";import{r as c,c as r,o as n}from"./vendor.e409d497.js";const s={};function t(_,a){const o=c("my-choose-city");return n(),r(o)}var i=e(s,[["render",t]]);export{i as default};
